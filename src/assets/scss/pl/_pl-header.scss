@@ -1,0 +1,102 @@
+@import "../variables";
+#payday-loan-header {
+  background: $white;
+  box-shadow: inset 0px -1px 0px rgb(0 0 0 / 5%);
+  .navbar-nav {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .nav-link {
+    color: $grey-06;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+
+    text-align: center;
+  }
+}
+.web-app-text {
+  margin-left: 8px;
+  place-self: center;
+
+  p {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 9px;
+    line-height: 9px;
+    margin: 0;
+    text-transform: uppercase;
+    color: $system-color-blue;
+    background: $dim-color-blue;
+    border: 1px solid $system-color-blue;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 6px;
+  }
+}
+
+.monex-logo-link {
+  align-self: center;
+  display: flex;
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+  }
+}
+.pl-header-container {
+  padding: 0;
+  display: flex;
+  height: 64px;
+
+  .dropdown-menu {
+    right: 0;
+    min-width: 7rem;
+  }
+
+  .dropdown-toggle {
+    padding: .375rem 0;
+  }
+
+  .dropdown-toggle::after {
+    display: none;
+  }
+
+  #dropdownMenuButton:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .avatar {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    background-color: $monex-color-00;
+    border-radius: 50%;
+    color: $white;
+    font-size: 16px;
+  }
+
+  #profile-btn {
+    min-width: 52px;
+  }
+}
+
+#payday-loan-layout-container {
+  .pl-mobile-header.container {
+    padding: 0 16px;
+  }
+}
+
+#monex-menu-logo {
+  width: 136px;
+  height: 32px;
+}
+
+.dropdown-menu {
+  display: block;
+}

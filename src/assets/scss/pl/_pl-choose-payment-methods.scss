@@ -1,0 +1,257 @@
+@import "../variables";
+h2#choose-payment-method-title {
+  margin-top: 16px;
+  padding: 0;
+  font-family: $sfUiDisplay;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.1px;
+  color: $grey-10;
+}
+
+.switch-tabs {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  margin-top: 16px;
+  padding: 4px;
+  gap: 4px;
+
+  .pl-tab-content {
+    padding: 8px 22px;
+    width: 100%;
+    background-color: transparent;
+    transition: background-color 0.25s;
+    border-radius: 4px;
+
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: none;
+    }
+
+    &.tab-content-active {
+      background-color: $white;
+      box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05),
+        0px 2px 4px rgba(0, 0, 0, 0.05);
+      transition: background-color 0.25s;
+    }
+
+    p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 18px;
+      color: $grey-10;
+    }
+  }
+  .method-icon {
+    margin-right: 4px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.card-method-img-box {
+  width: 100%;
+  .card-method-img {
+    max-width: 140px;
+  }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.4s ease;
+}
+
+.fade-enter,
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.pl-copied-box {
+  position: fixed;
+  left: 50%;
+  bottom: 10px;
+  z-index: 1000;
+
+  .pl-copied {
+    position: relative;
+    left: -50%;
+    width: 100px;
+    background: $monex-color-00;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    color: $white;
+  }
+}
+
+#stick-card {
+  width: 24px;
+  height: 1px;
+  background: #e5e5ea;
+  border: 1px solid transparent;
+}
+
+.card-payment-text {
+  font-family: $sfUiDisplay;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: $grey-08;
+  margin-top: 12px;
+}
+
+.transfer-payment-text {
+  font-family: $sfUiDisplay;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: $grey-08;
+  margin-top: 16px;
+}
+#amount-to-be-paid-content {
+  margin-top: 12px;
+}
+.pl-payment-content-container {
+  border-bottom: 0.5px solid $grey-01;
+  padding: 8px 0;
+  display: flex;
+
+  &:first-child {
+    border-top: 0.5px solid $grey-01;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  .pl-payment-content-label {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: $grey-08;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-left: 4px;
+      width: 12px;
+      height: 12px;
+    }
+  }
+  .pl-payment-content-value {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.1px;
+    color: $grey-10;
+  }
+  .pl-payment-content-hint {
+    margin-top: 8px;
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+    color: $grey-06;
+  }
+}
+
+.pl-payment-content-label.pl-required:after {
+  background: url(/img/pl/mandatory.svg) no-repeat;
+  content: "";
+  line-height: 1em;
+  vertical-align: top;
+  width: 8px;
+  height: 8px;
+  margin-left: 4px;
+  margin-top: -2px;
+}
+
+#pl-payment-required {
+  p {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: $grey-10;
+    &:before {
+      margin-right: 4px;
+      content: "*";
+      font-size: 16px;
+      color: $system-color-red;
+    }
+  }
+}
+
+.payment-method-container {
+  margin-top: 16px;
+  border: 1px solid $monex-color-00;
+  box-sizing: border-box;
+  border-radius: 12px;
+  padding: 12px;
+
+  .payment-method-title {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.1px;
+    color: $monex-color-01;
+  }
+}
+
+.btn-actions {
+  margin-top: 12px;
+
+  .pl-btn {
+    max-width: 273px;
+  }
+}
+
+.pl-payment-content-left {
+  flex: none;
+}
+.pl-payment-content-right {
+  width: 100%;
+  text-align: right;
+  margin: auto 0;
+  .pl-btn {
+    font-family: $sfUiDisplay;
+    height: 32px;
+    max-width: 80px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.1px;
+    color: $white;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-method-img-box {
+    .card-method-img {
+      max-width: 80px;
+    }
+  }
+
+  .btn-actions {
+    .pl-btn {
+      max-width: 200px;
+    }
+  }
+}

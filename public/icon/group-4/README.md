@@ -1,0 +1,13 @@
+/*
+Responsive CSS Sprite created using: https://responsive-css.us/
+*/
+
+.sprite-group-4-disappointed-face, .sprite-group-4-neutral-face, .sprite-group-4-smiling-face-with-heart-eyes, .sprite-group-4-smiling-face-with-smiling-eyes, .sprite-group-4-weary-face
+{display:inline-block; overflow:hidden; background-repeat: no-repeat;
+background-image:url('/icon/group-4/group-4.png');}
+
+.sprite-group-4-disappointed-face {width: 48px; height: 48px; background-position: 0.961538% 0.961538%; background-size: 533.333%; }
+.sprite-group-4-neutral-face {width: 48px; height: 48px; background-position: 25.0000% 0.961538%; background-size: 533.333%; }
+.sprite-group-4-smiling-face-with-heart-eyes {width: 48px; height: 48px; background-position: 49.0385% 0.961538%; background-size: 533.333%; }
+.sprite-group-4-smiling-face-with-smiling-eyes {width: 48px; height: 48px; background-position: 73.0769% 0.961538%; background-size: 533.333%; }
+.sprite-group-4-weary-face {width: 48px; height: 48px; background-position: 97.1154% 0.961538%; background-size: 533.333%; }

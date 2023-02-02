@@ -1,0 +1,126 @@
+@import "../variables";
+
+#payday-loan-index {
+  position: relative;
+  min-height: calc(100vh - 64px);
+}
+
+.payday-loan-steps-content {
+  margin-top: 40px;
+}
+
+.pl-five-step-text {
+  font-family: $sfUiDisplay;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 0;
+  /* Monex Color / 01 */
+
+  color: $monex-color-01;
+}
+
+.pl-five-steps-content {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+}
+
+.btn-next-pl-intro-box {
+  text-align: center;
+  #btn-next-pl-intro {
+    max-width: 200px;
+  }
+}
+
+ul.portrait-progress-bar {
+  padding: 0;
+  margin-bottom: 0;
+
+  .portrait-progress-bar-item {
+    display: flex;
+    margin-bottom: 12px;
+    position: relative;
+  }
+
+  .portrait-progress-bar-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .roadmap-checkpoint {
+    background: $system-color-indigo;
+    border-radius: 21px;
+    z-index: 2;
+    width: 24px;
+    height: 24px;
+    margin-bottom: 0;
+    text-align: center;
+    color: $white;
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+  }
+
+  .roadmap-checkpoint-content {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0 0 0 8px;
+    align-self: center;
+    /* identical to box height */
+
+    /* Monex Color / 01 */
+
+    color: $monex-color-01;
+  }
+
+  .portrait-progress-bar-item .roadmap-checkpoint-content::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 11px;
+    top: -20px;
+    height: 100%;
+    border-left: 2px #ccc solid;
+  }
+
+  .portrait-progress-bar-item:first-child .roadmap-checkpoint-content::before {
+    border-left: none;
+  }
+
+  &,
+  & *::before,
+  & *::after {
+    box-sizing: border-box;
+  }
+}
+
+#user-guide-video {
+  display: flex;
+  align-items: center;
+  place-content: center;
+  height: 24px;
+  background: $dim-color-blue;
+  border-radius: 4px;
+  gap: 8px;
+
+  &:hover, &:active, &:focus {
+    text-decoration: none;
+  }
+
+  #user-guide-video-title {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: $system-color-blue;
+  }
+}

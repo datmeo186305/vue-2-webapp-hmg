@@ -1,0 +1,90 @@
+.prompt-container {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: block;
+
+  .pl-prompt-title {
+    margin-top: 8px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    padding: 0 16px;
+    color: $grey-10;
+  }
+
+  .pl-prompt-image {
+    margin: 8px auto 0;
+    width: 56px;
+    height: 56px;
+  }
+
+  .pl-prompt-body {
+    margin-top: 8px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    padding: 0 16px;
+    color: $grey-08;
+  }
+
+  .prompt-content {
+    padding: 8px 0 0;
+    overflow: hidden;
+    background-color: $white !important;
+    border-radius: 16px;
+  }
+  .pl-prompt-actions {
+    margin-top: 16px;
+    display: flex;
+    background-color: $grey-01 !important;
+    gap: 1px;
+  }
+
+  .pl-prompt-btn {
+    width: 100%;
+  }
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.4s ease;
+}
+
+.fade-enter,
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.prompt-dialog {
+  margin: 1.75rem auto;
+  top: inherit !important;
+}
+
+#payday-loan-loading .prompt-dialog {
+  margin: 0 auto !important;
+}
+
+.top-prompt-close-btn {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  border: none;
+  background: none;
+
+  .dismiss-prompt-btn {
+    width: 40px;
+    height: 40px;
+  }
+}

@@ -1,0 +1,240 @@
+@import "../variables";
+.expected-amount-container {
+  border: 1px solid $grey-02;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 12px;
+
+  .expected-amount-content {
+    max-width: 141px;
+    text-align: right;
+    margin: 0 auto;
+
+    h3 {
+      font-family: $sfUiDisplay;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+      margin-bottom: 7px;
+      /* identical to box height */
+
+      /* Grey / 08 */
+
+      color: $grey-08;
+    }
+  }
+
+  .expected-price-text {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 7px;
+    /* identical to box height */
+
+    text-align: right;
+
+    /* Monex Color / 00 */
+
+    color: $monex-color-00;
+  }
+
+  .service-price-box {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 0;
+    color: $grey-08;
+
+    span {
+      color: $monex-color-00;
+    }
+  }
+
+  .applied-voucher {
+    color: $system-color-blue !important;
+  }
+}
+.pl-headline {
+  padding: 8px 0;
+}
+.choose-amount-box {
+  margin-top: 16px;
+}
+
+.pl-image-upload {
+  max-width: 343px;
+  margin: 8px auto;
+}
+
+.pl-type-assets {
+  font-family: $sfUiDisplay;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 16px;
+  color: $grey-08;
+}
+
+.pl-range-value {
+  font-family: $sfUiDisplay;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: $grey-06;
+  margin: 0;
+  align-self: center;
+  width: 40px;
+  flex: none;
+
+  &:last-child {
+    text-align: right;
+  }
+}
+
+.choose-voucher-container {
+  text-align: center;
+  margin-top: 8px;
+
+  button {
+    width: auto;
+    padding: 0;
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: right;
+    color: $system-color-blue;
+    border: none;
+    background: transparent;
+
+    &:hover,
+    &:focus,
+    &:active {
+      outline: none;
+    }
+  }
+}
+
+.pl-amount-range-process-bar {
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+
+.choose-amount-submit-btn button {
+  max-width: 200px;
+}
+
+.vue-slider-dot-value {
+  font-family: $sfUiDisplay;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 13px;
+  text-align: center;
+  color: $monex-color-00;
+  margin-bottom: 0;
+  padding: 12px 0;
+}
+
+.pl-choose-amount-info {
+  margin-top: 16px;
+}
+
+.have-not-collateral-document-text {
+  span {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: $monex-color-01;
+  }
+
+  a {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: $system-color-blue;
+
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+}
+.loan-detail-container {
+  border: 1px solid #007aff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 24px;
+
+  .amount-detail-label {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: $grey-08;
+  }
+
+  .amount-detail-value {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: $grey-10;
+  }
+
+  #loan-amount {
+    margin-bottom: 10px;
+  }
+
+  #choose-amount-number {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: $monex-color-00;
+  }
+
+  #discount-fee {
+    color: #007aff;
+  }
+
+  #total-fee {
+    color: $monex-color-00;
+  }
+
+  .loan-detail-item {
+    height: 44px;
+    padding: 0 16px;
+  }
+
+  .loan-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .pl-divider {
+    margin: 0;
+  }
+
+  .desc-fee {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    color: $grey-06;
+  }
+}

@@ -1,0 +1,65 @@
+@import "../variables";
+.pl-salary-upload-img {
+  max-width: 343px;
+  margin: 0 auto;
+}
+
+#additional-document-btn-submit button {
+  max-width: 271px;
+}
+
+.pl-salary-upload-img-space {
+  margin-top: 16px;
+}
+
+.pl-additional-document-info {
+  margin-top: 16px;
+}
+
+.pl-image-upload {
+  max-width: 343px;
+  margin: 8px auto;
+}
+
+.pl-type-assets {
+  font-family: $sfUiDisplay;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 16px;
+  color: $grey-08;
+}
+
+.pl-headline {
+  padding: 8px 0;
+}
+
+.salary-info-desc {
+  margin-top: 8px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.1px;
+  color: $grey-07;
+}
+
+#salary-info-example-btn {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.1px;
+  color: $system-color-blue;
+  background: $white;
+  width: 100%;
+  padding: 7px 0;
+  border: none;
+  margin: 8px 0 16px;
+
+  &:focus, &:hover, &:active {
+    outline: none;
+  }
+
+}

@@ -1,0 +1,1741 @@
+@import "../variables";
+$spaceBetweenBox: 40px;
+$spaceBetweenContent: 24px;
+$spaceWithFooter: 56px;
+p {
+  margin: 0;
+}
+
+a:-webkit-any-link:focus-visible {
+  outline: none;
+}
+
+.modal-open {
+  position: fixed;
+  overflow-y: hidden;
+}
+
+.pl-text-inline {
+  margin: 0;
+  color: $monex-color-00;
+  font-family: $sfUiDisplay;
+  font-weight: 500;
+}
+
+.pl-inline-salary-hint {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.1px;
+  color: $grey-10;
+  font-weight: 600;
+}
+
+.pl-inline-collateral-document-hint {
+  font-style: normal;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.1px;
+  color: $grey-10;
+  font-weight: 600;
+}
+
+.pl-name-inline {
+  font-family: $sfUiDisplay;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: $system-color-red;
+}
+
+.pl-text-sent-email-inline {
+  margin: 0;
+  color: $monex-color-00;
+  font-family: $sfUiDisplay;
+}
+
+.pl-thank-for-sign {
+  margin: 0;
+  font-family: $sfUiDisplay;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: $grey-08;
+}
+
+.pl-text-sent-confirm-policy-inline {
+  margin: 0;
+  color: $monex-color-00;
+  font-family: $sfUiDisplay;
+  display: initial;
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+  }
+}
+
+input.pl-text-otp {
+  font-family: $sfUiDisplay;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 100%;
+  text-align: center;
+  caret-color: $system-color-blue;
+  color: $grey-08;
+}
+
+.gif-resource {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+#payday-loan-success {
+  .modal-content {
+    background-color: $white !important;
+    border-radius: 16px;
+    padding: 24px;
+  }
+
+  .pl-modal-success-title {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    margin: 12px 0;
+
+    /* Grey / 08 */
+
+    color: $grey-08;
+  }
+
+  .pl-modal-success-content-container {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    margin-bottom: 0;
+
+    /* Grey / 07 */
+
+    color: $grey-07;
+  }
+
+  .pl-modal-success-content {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    margin-bottom: 0;
+
+    /* Grey / 07 */
+
+    color: $grey-07;
+  }
+
+  .pl-modal-success-btn {
+    margin-top: $spaceBetweenContent;
+
+    .pl-btn {
+      max-width: 200px;
+    }
+  }
+
+  .modal-dialog {
+    top: 25%;
+  }
+
+  .celebrate-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  &.pl-contract-success-modal .celebrate-img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+#payday-loan-notification-success {
+  .modal-content {
+    background-color: $white !important;
+    border-radius: 16px;
+    padding: 24px;
+  }
+
+  .pl-modal-success-title {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    margin: 12px 0;
+
+    /* Grey / 08 */
+
+    color: $grey-08;
+  }
+
+  .pl-modal-success-content-container {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    margin-bottom: 0;
+
+    /* Grey / 07 */
+
+    color: $grey-07;
+  }
+
+  .pl-modal-success-content {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    margin-bottom: 0;
+
+    /* Grey / 07 */
+
+    color: $grey-07;
+  }
+
+  .pl-modal-success-btn {
+    margin-top: $spaceBetweenContent;
+
+    .pl-btn {
+      max-width: 200px;
+    }
+  }
+
+  .modal-dialog {
+    top: 25%;
+  }
+
+  .celebrate-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  &.pl-contract-success-modal .celebrate-img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+#payday-loan-error {
+  .modal-content {
+    background-color: $white !important;
+    border-radius: 16px;
+    padding: 24px;
+  }
+
+  .pl-modal-error-title {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    margin: 12px 0;
+
+    /* Grey / 08 */
+
+    color: $grey-08;
+  }
+
+  .pl-modal-error-content-container {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    margin-bottom: 0;
+
+    /* Grey / 07 */
+
+    color: $grey-07;
+  }
+
+  .pl-modal-error-content {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    margin-bottom: 0;
+
+    /* Grey / 07 */
+
+    color: $grey-07;
+  }
+
+  .pl-modal-error-btn {
+    margin-top: $spaceBetweenContent;
+
+    .pl-btn {
+      max-width: 200px;
+    }
+  }
+
+  .modal-dialog {
+    top: 25%;
+  }
+
+  .error-img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+#payday-loan-failed {
+  .modal-content {
+    background-color: $white !important;
+    border-radius: 16px;
+    padding: 24px;
+  }
+
+  .pl-modal-error-title {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    margin: 12px 0;
+
+    /* Grey / 08 */
+
+    color: $grey-08;
+  }
+
+  .pl-modal-error-content-container {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    margin-bottom: 0;
+
+    /* Grey / 07 */
+
+    color: $grey-07;
+  }
+
+  .pl-modal-error-content {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    margin-bottom: 0;
+
+    /* Grey / 07 */
+
+    color: $grey-07;
+  }
+
+  .pl-modal-error-btn {
+    margin-top: $spaceBetweenContent;
+
+    .pl-btn {
+      max-width: 200px;
+    }
+  }
+
+  .modal-dialog {
+    top: 25%;
+  }
+
+  .error-img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+#payday-loan-waiting {
+  .modal-content {
+    background-color: $white !important;
+    border-radius: 16px;
+    padding: 24px;
+  }
+
+  .pl-modal-waiting-title {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    margin: 12px 0;
+
+    /* Grey / 08 */
+
+    color: $grey-08;
+  }
+
+  .pl-modal-waiting-content-container {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    margin-bottom: 0;
+
+    /* Grey / 07 */
+
+    color: $grey-07;
+  }
+
+  .pl-modal-waiting-btn {
+    margin-top: $spaceBetweenContent;
+
+    .pl-btn {
+      max-width: 200px;
+
+      a {
+        color: $white;
+        &:hover,
+        &:active,
+        &:focus {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .modal-dialog {
+    top: 25%;
+  }
+
+  .waiting-img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+#payday-loan-collateral-document-example {
+  .modal-content {
+    background-color: transparent !important;
+    border-radius: 16px;
+    padding: 16px 24px 24px;
+  }
+}
+
+#pl-confirm-finalization-modal {
+  .modal-content {
+    background-color: $white !important;
+    border-radius: 16px;
+    padding: 16px 24px 24px;
+  }
+
+  .pl-modal-confirm-finalization-content {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    margin-bottom: 0;
+    color: $grey-08;
+  }
+
+  .waiting-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .pl-confirm-finalization-btn {
+    margin-top: $spaceBetweenContent;
+
+    .pl-btn {
+      max-width: 200px;
+
+      a {
+        color: $white;
+        &:hover,
+        &:active,
+        &:focus {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+#payday-loan-salary-document-example {
+  .modal-content {
+    background-color: $white !important;
+    border-radius: 16px;
+    padding: 16px 24px 24px;
+  }
+
+  .dismiss-modal-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  .pl-modal-salary-example-title {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    text-align: center;
+    color: $grey-10;
+    margin-bottom: 31px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.1px;
+  }
+
+  .pl-salary-example-btn {
+    margin-top: $spaceBetweenContent;
+
+    .pl-btn {
+      max-width: 200px;
+    }
+  }
+}
+
+#payday-loan-guide-sign-contract {
+  .modal-content {
+    background-color: $white !important;
+    border-radius: 16px;
+    padding: 16px 24px 24px;
+  }
+
+  .dismiss-modal-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+
+  .pl-modal-guide-sign-contract-title {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: $grey-08;
+    margin-bottom: 31px;
+  }
+
+  .pl-sign-contract-btn {
+    margin-top: $spaceBetweenContent;
+
+    .pl-btn {
+      max-width: 200px;
+    }
+  }
+
+  .pl-modal-guide-sign-contract-step {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: $monex-color-00;
+  }
+
+  .pl-modal-guide-sign-contract-step-title {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: $grey-08;
+    margin: 4px 0;
+  }
+
+  .pl-modal-guide-sign-contract-step-desc {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: $grey-06;
+  }
+
+  .pl-divider {
+    margin: 12px 0;
+  }
+}
+
+#payday-loan-guide-sign-letter-term-of-service {
+  .modal-content {
+    background-color: $white !important;
+    border-radius: 16px;
+    padding: 16px 24px 24px;
+    text-align: left;
+  }
+
+  .dismiss-modal-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+
+  .pl-modal-guide-sign-contract-title {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: $grey-08;
+    margin-bottom: 31px;
+  }
+
+  .pl-sign-contract-btn {
+    margin-top: $spaceBetweenContent;
+
+    .pl-btn {
+      max-width: 200px;
+    }
+  }
+
+  .pl-modal-guide-sign-contract-step {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: $monex-color-00;
+  }
+
+  .pl-modal-guide-sign-contract-step-title {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: $grey-08;
+    margin: 4px 0;
+  }
+
+  .pl-modal-guide-sign-contract-step-desc {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: $grey-06;
+  }
+
+  .pl-divider {
+    margin: 12px 0;
+  }
+}
+
+#payday-loan-choose-otp-method-modal {
+  .modal-content {
+    background-color: $white !important;
+    border-radius: 16px;
+    padding: 0;
+    text-align: left;
+  }
+
+  .dismiss-modal-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+
+  .pl-divider {
+    margin: 16px 0;
+  }
+
+  #choose-otp-method-title {
+    margin: 13px auto;
+
+    h2 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      letter-spacing: 0.1px;
+    }
+  }
+
+
+  .otp-send-methods-container {
+
+    .support-icon {
+      position: absolute;
+      top: 0px;
+      right: 0;
+      width: 16px;
+      height: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .otp-method {
+      padding: 12px 16px;
+      cursor: pointer;
+      .method-description {
+        position: relative;
+        width: 100%;
+        margin-left: 17px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        text-align: left;
+      }
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+      }
+    }
+  }
+
+}
+
+#payday-loan-guide-transfer-payment-modal {
+  .modal-content {
+    background-color: $white !important;
+    border-radius: 16px;
+    padding: 0;
+    text-align: left;
+  }
+
+  .dismiss-modal-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+
+  .pl-divider {
+    margin: 16px 0;
+  }
+
+  .btn-actions {
+    padding: 16px;
+    margin-top: 0;
+
+    .insurance-btn {
+      max-width: 100%;
+    }
+  }
+
+  .dismiss-modal-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  .pl-sign-contract-btn {
+    padding-bottom: 16px;
+  }
+
+  .pl-copy-box {
+    background: $white;
+    border: 2px solid $grey-01;
+    box-sizing: border-box;
+    border-radius: 8px;
+    display: flex;
+    padding: 6px 12px;
+    margin: 8px 0;
+    height: 36px;
+
+    img {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+    }
+
+    .pl-copy-box-content {
+      font-family: $sfUiDisplay;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.1px;
+      color: $grey-10;
+    }
+
+    .pl-copy-text {
+      font-family: $sfUiDisplay;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.1px;
+      color: $system-color-blue;
+      cursor: pointer;
+    }
+
+    .pl-copied {
+      font-family: $sfUiDisplay;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      letter-spacing: 0.1px;
+      color: $system-color-green;
+      display: inline-flex;
+
+      span {
+        margin-right: 4px;
+      }
+    }
+
+    .pl-copy-box-btn {
+      flex: none;
+    }
+
+    .pl-copy-box-content {
+      width: 100%;
+    }
+  }
+
+  #guide-transfer-title {
+    padding: 11px 16px;
+
+    h2 {
+      font-family: $sfUiDisplay;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: 0.1px;
+      color: $grey-10;
+    }
+  }
+
+  .guide-transfer-content {
+    padding: 16px;
+  }
+
+  .pl-modal-guide-step {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: $monex-color-00;
+  }
+
+  .pl-modal-guide-step-desc {
+    margin-top: 6px;
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.1px;
+    color: $grey-10;
+  }
+
+  @media (max-width: 768px) {
+    .btn-actions {
+      .pl-btn {
+        max-width: 200px;
+      }
+    }
+  }
+}
+
+#payday-loan-ads {
+  .modal-content {
+    background-color: transparent !important;
+  }
+}
+
+#payday-loan-sign-approval-letter-success {
+  .modal-content {
+    background-color: transparent !important;
+  }
+
+  .pl-modal-sign-approval-letter-success-content {
+    position: relative;
+    margin: 0 auto;
+    border-radius: 16px;
+    overflow: hidden;
+    min-height: 420px;
+
+
+    #pl-ads-actions {
+      margin-bottom: 30px;
+      width: 100%;
+      padding: 0 40px;
+
+      #pl-next-btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 24px;
+        place-content: center;
+        background: #FFCC00;
+        box-sizing: border-box;
+        border-radius: 40px;
+        font-family: $sfUiDisplay;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 24px;
+        color: #503F16;
+        margin: 0 auto;
+
+        &:hover {
+          background: #f8e0a3;
+        }
+      }
+
+
+      #pl-home-btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 24px;
+        place-content: center;
+        background: rgba(255, 255, 255, 0.2);
+        box-sizing: border-box;
+        border-radius: 40px;
+        font-family: $sfUiDisplay;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 24px;
+        color: $white;
+        margin: 8px auto 0;
+
+        &:hover {
+          background: rgba(206, 206, 206, 0.2);
+        }
+      }
+    }
+  }
+}
+
+#payday-loan-rating {
+  .modal-content {
+    background-color: #ffffff !important;
+    border-radius: 16px;
+    padding: 16px 24px 24px;
+  }
+  .dismiss-modal-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .rating-dialog {
+    position: relative;
+    padding: 32px 0 0;
+  }
+
+  .emotion-box {
+    cursor: pointer;
+    display: flex;
+    width: 64px;
+    height: 96px;
+    padding: 8px;
+    margin: 16px 0;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: 0.3s;
+    .emotion-description {
+      text-align: center;
+      height: 28px;
+      font-size: 12px;
+      line-height: 14px;
+      color: $grey-08;
+    }
+  }
+
+  .chosen-rating {
+    background: #f2fff5;
+    border: 1px solid $monex-color-00;
+    box-sizing: border-box;
+    border-radius: 16px;
+    .emotion-description {
+      color: $monex-color-00;
+    }
+  }
+
+  .title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: $monex-color-01;
+    margin: 0 12px;
+  }
+
+  .description {
+    margin: 8px 12px 0;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: $grey-08;
+  }
+
+  .rating-tag-box {
+    display: flex;
+    justify-content: center;
+    margin: -4px auto;
+    .rating-tag-item {
+      margin: 4px;
+      height: 30px;
+      border-radius: 40px;
+      padding: 8px 12px;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+      background: $grey-00;
+      cursor: pointer;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      transition: 0.3s;
+
+      &.highlight {
+        background: $monex-color-00 !important;
+        color: white !important;
+      }
+    }
+  }
+
+  .rating-question {
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    font-weight: 600;
+    color: $grey-08;
+    margin-bottom: 12px;
+  }
+
+  .review-form {
+    margin: 16px 12px 20px;
+  }
+
+  .text-area {
+    width: 100%;
+    min-height: 120px;
+    padding: 12px;
+    border: 2px solid $grey-01;
+    box-sizing: border-box;
+    border-radius: 12px;
+    font-family: $sfUiDisplay;
+    resize: none;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .rating-btn {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    width: 200px;
+  }
+
+  @media (max-width: 768px) {
+    .rating-dialog {
+      //max-width: 80vw;
+      //max-height: 90vh;
+    }
+
+    .emotion {
+      transform: scale(0.75);
+    }
+
+    .emotion-box {
+      height: auto;
+      padding: 0;
+    }
+  }
+
+  @media (max-width: 360px) {
+    .text-area {
+      height: 70px;
+      padding: 8px;
+    }
+  }
+}
+
+#payday-loan-choose-voucher {
+  .modal-content {
+    background-color: $white !important;
+    border-radius: 16px;
+    padding: 16px 24px 24px;
+    text-align: left;
+  }
+
+  .dismiss-modal-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+
+  .pl-modal-choose-voucher-title {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: $grey-08;
+    margin-bottom: 0;
+  }
+
+  .pl-sign-contract-btn {
+    margin-top: $spaceBetweenContent;
+
+    .pl-btn {
+      max-width: 200px;
+    }
+  }
+
+  .pl-modal-choose-voucher-step {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: $monex-color-00;
+  }
+
+  .pl-modal-choose-voucher-step-title {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: $grey-08;
+    margin: 4px 0;
+  }
+
+  .pl-modal-choose-voucher-step-desc {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: $grey-06;
+  }
+
+  .pl-divider {
+    margin: 12px 0;
+  }
+}
+
+#payday-loan-type-otp-modal {
+  .modal-content {
+    background-color: $white !important;
+    border-radius: 16px;
+    padding: 16px 24px 24px;
+    text-align: left;
+  }
+
+  .dismiss-modal-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+}
+
+#pl-electronic-contract-signing-modal {
+  .modal-content {
+    background-color: $white !important;
+    border-radius: 16px;
+    padding: 16px;
+    text-align: left;
+  }
+
+  .dismiss-modal-btn {
+    font-family: $sfUiDisplay;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: $system-color-red;
+  }
+
+  .pl-electronic-signing-modal-title {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: $grey-10;
+  }
+
+  #pl-electronic-signing-guide {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: $grey-08;
+    margin-top: 16px;
+    text-align: center;
+  }
+
+  #btn-accept-signing.pl-btn {
+    width: 100%;
+  }
+
+  .electronic-signing-area {
+    margin-top: 26px;
+    background: #fafafa;
+    border: 2px dashed rgba(42, 172, 126, 0.5);
+    box-sizing: border-box;
+    border-radius: 16px;
+    min-height: 456px;
+    position: relative;
+  }
+
+  .pl-resign-btn-container {
+    position: absolute;
+    bottom: 16px;
+    width: 100%;
+
+    .pl-resign-btn {
+      text-align: center;
+      background: $grey-06;
+      display: flex;
+      align-items: center;
+      border-radius: 40px;
+      width: 88px;
+      padding: 4px 0;
+      margin: 0 auto;
+      place-content: center;
+
+      &:hover,
+      &:focus,
+      &:active {
+        background: $grey-05;
+        text-decoration: none;
+      }
+    }
+
+    .pl-resign-text {
+      margin-left: 8px;
+      font-family: $sfUiDisplay;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.1px;
+      color: $white;
+    }
+  }
+}
+
+#payday-loan-loading-modal {
+  .modal-content {
+    background-color: $white !important;
+    border-radius: 16px;
+    padding: 24px;
+  }
+
+  .pl-modal-loading-title {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    margin: 12px 0;
+
+    /* Grey / 08 */
+
+    color: $grey-08;
+  }
+
+  .pl-modal-loading-content {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    margin-bottom: 0;
+
+    /* Grey / 07 */
+
+    color: $grey-07;
+  }
+
+  .modal-dialog {
+    top: 25%;
+  }
+
+  &.modal-content-transparent {
+    .modal-content {
+      background-color: transparent !important;
+    }
+
+    .modal-dialog {
+      top: 35%;
+    }
+  }
+}
+
+#payday-loan-loading {
+  .modal-content {
+    background-color: $white !important;
+    border-radius: 16px;
+    padding: 24px;
+  }
+
+  .pl-modal-loading-title {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    margin: 12px 0;
+
+    /* Grey / 08 */
+
+    color: $grey-08;
+  }
+
+  .pl-modal-loading-content {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    margin-bottom: 0;
+
+    /* Grey / 07 */
+
+    color: $grey-07;
+  }
+
+  .modal-dialog {
+    top: 25%;
+  }
+
+  &.modal-content-transparent {
+    .modal-content {
+      background-color: transparent !important;
+    }
+
+    .modal-dialog {
+      top: 35%;
+    }
+  }
+}
+
+.pl-space-between-box {
+  margin: $spaceBetweenBox 0 0 0;
+}
+
+.pl-space-between-content {
+  margin: $spaceBetweenContent 0 0 0;
+}
+
+.pl-inline-block {
+  display: inline-block;
+}
+
+.pl-padding-bottom-default {
+  padding-bottom: $spaceWithFooter !important;
+}
+
+.pl-padding-bottom-with-provider {
+  padding-bottom: 124px !important;
+}
+
+//Custom css vue datetime plugin
+.vue-datetime-input {
+  background: $grey-00;
+  border-radius: 4px;
+  width: 100%;
+  font-family: $sfUiDisplay;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  padding: 13.5px 12px 12.5px;
+  border: none;
+  outline: none;
+  color: $grey-08;
+}
+
+.theme-monex .vdatetime-popup__header,
+.theme-monex .vdatetime-calendar__month__day--selected > span > span,
+.theme-monex .vdatetime-calendar__month__day--selected:hover > span > span {
+}
+
+.theme-monex .vdatetime-popup {
+  border-radius: 10px;
+  font-family: $sfUiDisplay !important;
+}
+
+.theme-monex .vdatetime-popup__header {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.theme-monex .vdatetime-year-picker__item--selected,
+.theme-monex .vdatetime-time-picker__item--selected,
+.theme-monex .vdatetime-popup__actions__button {
+}
+
+//End Custom css vue datetime plugin
+
+.pl-invalid-feedback {
+  font-family: $sfUiDisplay;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+  margin-top: 4px;
+
+  /* System/Red */
+
+  color: $system-color-red;
+}
+
+label.pl-label {
+  font-family: $sfUiDisplay;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  width: 100%;
+  position: relative;
+  /* Grey / 08 */
+
+  color: $grey-08;
+  margin-bottom: 8px;
+
+  &.require-field:after {
+    margin-left: 4px;
+    background: url("/img/pl/mandatory.svg") no-repeat;
+    content: "";
+    width: 8px;
+    height: 8px;
+    color: red;
+    position: absolute;
+    top: 5px;
+  }
+}
+
+.pl-label-container {
+  display: flex;
+
+  p.pl-label-suggest {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: right;
+    width: 100%;
+    color: $grey-06;
+  }
+}
+
+.pl-datetime {
+  position: relative;
+  width: 100%;
+
+  .pl-datetime-icon {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.v-select.pl-select {
+  font-family: $sfUiDisplay;
+  background: $grey-00;
+  border-radius: 4px;
+  width: 100%;
+
+  .vs__dropdown-toggle {
+    border: none;
+    padding: 10.5px 12px 9.5px;
+  }
+
+  .vs__no-options {
+    font-family: $sfUiDisplay;
+  }
+
+  .vs__selected {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    margin: 0;
+    padding: 0;
+    /* identical to box height */
+
+    color: $grey-08;
+  }
+
+  .vs__search {
+    font-family: $sfUiDisplay;
+    margin: 0;
+    padding: 0;
+
+    &::placeholder {
+      font-family: $sfUiDisplay;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 18px;
+      /* identical to box height */
+
+      /* Grey / 06 */
+
+      color: $grey-06;
+    }
+  }
+
+  .vs__actions {
+    padding: 0;
+  }
+
+  .pl-icon-indicator {
+    width: 24px;
+    height: 24px;
+  }
+
+  .vs--open {
+    .pl-icon-indicator {
+      color: red;
+    }
+  }
+
+  .vs__dropdown-menu {
+    border: none;
+  }
+}
+
+.pl-headline {
+  font-family: $sfUiDisplay;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  margin: 0;
+  /* Grey / 10 */
+
+  color: $grey-10;
+}
+
+.pl-divider {
+  width: 100%;
+  height: 1px;
+  margin: 16px 0;
+  background: $grey-02;
+}
+
+.vue-slider-component.pl-vue-slider {
+  padding: 19px 8px !important;
+  font-family: $sfUiDisplay;
+
+  .vue-slider-dot .vue-slider-dot-handle {
+    background: linear-gradient(180deg, #ffffff 0%, #f2f2f2 100%);
+    border: 2px solid #2aac7e;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 10%),
+      0px 0px 0px 4px rgb(42 172 126 / 10%);
+  }
+
+  .pl-tooltip-class {
+    letter-spacing: 1px;
+    font-family: $sfUiDisplay;
+    border: 1px solid $monex-color-00;
+    background-color: $monex-color-00;
+  }
+
+  .pl-process-class {
+    background-color: $monex-color-00;
+  }
+}
+
+.pl-list {
+  padding: 0;
+  margin: 0;
+
+  .pl-list-item {
+    display: flex;
+    align-content: space-between;
+    padding: 14px 0 13px;
+    margin: 0 16px;
+    border-bottom: 1px solid $grey-02;
+    align-items: center;
+
+    .pl-list-item-label {
+      margin: 0;
+      font-family: $sfUiDisplay;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 16px;
+      color: $grey-06;
+      flex: none;
+    }
+
+    .pl-list-item-content {
+      margin: 0;
+      width: 100%;
+      font-family: $sfUiDisplay;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+      text-align: right;
+      color: $grey-10;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding-left: 8px;
+    }
+
+    .pl-list-item-content-empty {
+      color: $grey-06;
+    }
+  }
+}
+
+#trueidsdk {
+  .modal-content {
+    width: 100%;
+  }
+}
+
+.pl-auth-layout {
+  min-height: calc(100vh - 124px);
+  background: #f0f7ff;
+  padding-top: 48px;
+  position: relative;
+}
+
+.pl-inline-grid {
+  display: inline-grid;
+}
+
+#pl-provider-info-container {
+  position: absolute;
+  bottom: 16px;
+
+  .pl-provider-info {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: $grey-06;
+    max-width: 315px;
+    margin: 0 auto;
+  }
+}
+
+.payment-result-support-contact {
+  display: inline;
+  font-family: $sfUiDisplay;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  color: $system-color-orange;
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+    color: $system-color-orange;
+  }
+}
+
+.voucher-condition-content {
+  ul {
+    list-style: unset;
+    padding-left: 30px;
+    margin: 0;
+  }
+}

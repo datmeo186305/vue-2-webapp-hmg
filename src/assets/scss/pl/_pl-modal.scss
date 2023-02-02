@@ -1,0 +1,44 @@
+.modal-container {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: block;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.4s ease;
+}
+
+.fade-enter,
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.modal-dialog {
+  margin: 1.75rem auto;
+  top: inherit!important;
+}
+
+#payday-loan-loading .modal-dialog {
+  margin: 0 auto !important;
+}
+
+.top-modal-close-btn {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  border: none;
+  background: none;
+
+  .dismiss-modal-btn {
+    width: 40px;
+    height: 40px;
+  }
+}

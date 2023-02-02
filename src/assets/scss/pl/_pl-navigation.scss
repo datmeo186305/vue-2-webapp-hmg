@@ -1,0 +1,93 @@
+@import "../variables";
+.pl-top-navigation {
+  text-align: center;
+  min-height: 60px;
+  background: $monex-gradient-03;
+  color: $white;
+
+  #pl-top-nav-heading {
+    display: grid;
+    grid-template-columns: 173px 1fr 173px;
+    align-items: center;
+    min-height: 60px;
+    padding: 0 16px;
+  }
+
+  #pl-top-nav-container {
+    padding: 0;
+  }
+
+  .pl-nav-title {
+    margin-bottom: 0;
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: $white;
+  }
+
+  .pl-prev-btn {
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .pl-next-btn {
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .pl-hotline-btn {
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      text-decoration: none;
+    }
+    p {
+      font-family: $sfUiDisplay;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+      text-align: center;
+      color: $white;
+      margin-right: 8px;
+    }
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .pl-hotline-btn {
+    float: right;
+  }
+
+  .pl-btn-logout {
+    font-family: $sfUiDisplay;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: left;
+    color: $system-color-orange;
+
+    &:hover, &:active, &:focus {
+      text-decoration: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .pl-top-navigation {
+    #pl-top-nav-heading {
+      display: grid;
+      grid-template-columns: 60px 1fr 60px;
+    }
+  }
+}
